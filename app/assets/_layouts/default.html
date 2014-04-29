@@ -23,23 +23,35 @@
     </div>
 
     <nav class="navbar navbar-inverse">
-      <ul class="nav navbar-nav">
-        <li{% if page.url == '/index.html' %} class="active"{% endif %}>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="#" target="_blank">Patient Portal</a>
-        </li>
-        <li{% if page.url == '/providers.html' %} class="active"{% endif %}>
-          <a href="/providers.html">Providers</a>
-        </li>
-        <li{% if page.url == '/forms.html' %} class="active"{% endif %}>
-          <a href="/forms.html">Patient Forms</a>
-        </li>
-        <li{% if page.url == '/contact.html' %} class="active"{% endif %}>
-          <a href="/contact.html">Contact Us</a>
-        </li>
-      </ul>
+      <div class="navbar-header visible-xs" data-target="#menu" data-toggle="collapse">
+        <div class="navbar-brand">
+          Menu
+        </div>
+        <button class="btn navbar-btn navbar-toggle">
+          <div class="icon-bar"></div>
+          <div class="icon-bar"></div>
+          <div class="icon-bar"></div>
+        </button>
+      </div>
+      <div id="menu" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li{% if page.url == '/index.html' %} class="active"{% endif %}>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Patient Portal</a>
+          </li>
+          <li{% if page.url == '/providers.html' %} class="active"{% endif %}>
+            <a href="/providers.html">Providers</a>
+          </li>
+          <li{% if page.url == '/forms.html' %} class="active"{% endif %}>
+            <a href="/forms.html">Patient Forms</a>
+          </li>
+          <li{% if page.url == '/contact.html' %} class="active"{% endif %}>
+            <a href="/contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div id="content">

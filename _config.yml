@@ -1,6 +1,6 @@
 name:     Cartersville Family Medicine
 markdown: redcarpet
-pygments: true
+pygments: false
 source:   ./public
 
 # exclude:
