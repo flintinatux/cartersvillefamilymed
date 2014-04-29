@@ -1,0 +1,13 @@
+name:     Cartersville Family Medicine
+markdown: redcarpet
+pygments: true
+source:   ./public
+
+# exclude:
+#   - app
+#   - bower_components
+#   - node_modules
+#   - bower.json
+#   - config.coffee
+#   - package.json
+

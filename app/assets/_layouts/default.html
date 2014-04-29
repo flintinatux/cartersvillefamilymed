@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | Cartersville Family Medicine</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="DIGEST(styles/app.css)">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="DIGEST(scripts/vendor.js)"></script>
+    <script src="DIGEST(scripts/app.js)"></script>
+  </head>
+
+  <body class="container">
+    <div id="header">
+    </div>
+
+    <nav class="navbar navbar-inverse">
+      <ul class="nav navbar-nav">
+        <li{% if page.url == '/index.html' %} class="active"{% endif %}>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="#" target="_blank">Patient Portal</a>
+        </li>
+        <li{% if page.url == '/providers.html' %} class="active"{% endif %}>
+          <a href="/providers.html">Providers</a>
+        </li>
+        <li{% if page.url == '/forms.html' %} class="active"{% endif %}>
+          <a href="/forms.html">Patient Forms</a>
+        </li>
+        <li{% if page.url == '/contact.html' %} class="active"{% endif %}>
+          <a href="/contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="content">
+      {{ content }}
+    </div>
+
+    <div id="footer">
+      {% if site.host == '0.0.0.0' %}
+        <div id="debug" class="well">
+          layout: {{ page.layout }}<br>
+          title: {{ page.title }}<br>
+          url: {{ page.url }}
+        </div>
+      {% endif %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "cartersvillefamilymed",
+  "repo": "flintinatux/cartersvillefamilymed",
+  "version": "0.0.1",
+  "main": "public/javascripts/app.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "~3",
+    "font-awesome": "~4",
+    "jquery": "~2"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "./dist/js/bootstrap.js"
+      ]
+    },
+    "font-awesome": {
+      "main": ["fonts"]
+    },
+    "jquery": {
+      "main": "dist/jquery.js"
+    }
+  }
+}
