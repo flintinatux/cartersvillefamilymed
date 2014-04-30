@@ -18,14 +18,16 @@
     <script src="scripts/app.js"></script>
   </head>
 
-  <body class="container">
-    {% include header.html %}
-    {% include navbar.html %}
+  <body>
+    <div class="container">
+      {% include header.html %}
+      {% include navbar.html %}
 
-    <div id="content">
-      {{ content }}
+      <div id="content">
+        {{ content }}
+      </div>
+
+      {% include footer.html %}
     </div>
-
-    {% include footer.html %}
   </body>
 </html>
