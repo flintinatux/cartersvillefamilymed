@@ -12,22 +12,22 @@
   <div id="menu" class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
       <li{% if page.url == '/index.html' %} class="active"{% endif %}>
-        <a href="/">Home</a>
+        <a href="{{ site.baseurl }}/">Home</a>
       </li>
       <li>
         <a href="{{ site.data.urls.portal }}" target="_blank">Patient Portal</a>
       </li>
       <li{% if page.url == '/providers.html' %} class="active"{% endif %}>
-        <a href="/providers.html">Providers</a>
+        <a href="{{ site.baseurl }}/providers.html">Providers</a>
       </li>
       <li{% if page.url == '/forms.html' %} class="active"{% endif %}>
-        <a href="/forms.html">Patient Info / Forms</a>
+        <a href="{{ site.baseurl }}/forms.html">Patient Info / Forms</a>
       </li>
       <li{% if page.url == '/location_hours.html' %} class="active"{% endif %}>
-        <a href="/location_hours.html">Location / Hours</a>
+        <a href="{{ site.baseurl }}/location_hours.html">Location / Hours</a>
       </li>
       <li{% if page.url == '/contact.html' %} class="active"{% endif %}>
-        <a href="/contact.html">Contact Us</a>
+        <a href="{{ site.baseurl }}/contact.html">Contact Us</a>
       </li>
     </ul>
   </div>
