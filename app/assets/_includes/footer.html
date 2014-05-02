@@ -1,5 +1,5 @@
 <div id="footer">
-  {% if site.host == '0.0.0.0' %}
+  {% if site.env == 'development' %}
     <div id="debug" class="well">
       layout: {{ page.layout }}<br>
       title: {{ page.title }}<br>
