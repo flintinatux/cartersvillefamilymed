@@ -1,4 +1,4 @@
-baseurl:  /cartersvillefamilymed
+baseurl:  ''
 env:      production
 name:     Cartersville Family Medicine
 markdown: redcarpet
