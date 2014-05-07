@@ -19,18 +19,16 @@
 
   <div id="office_hours" class="well">
     <h3>Office Hours</h3>
-    <div class="table-responsive">
-      <table class="table table-condensed">
-        <tbody>
-          {% for office_hour in site.data.office_hours %}
-            <tr>
-              <td>{{ office_hour.day }}</td>
-              <td>{{ office_hour.hours }}</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
+    <table class="table table-condensed">
+      <tbody>
+        {% for office_hour in site.data.office_hours %}
+          <tr>
+            <td>{{ office_hour.day }}</td>
+            <td>{{ office_hour.hours }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
 
   <div id="healow">
