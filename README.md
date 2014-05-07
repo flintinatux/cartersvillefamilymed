@@ -18,4 +18,4 @@ $ bower install
 $ brunch w
 $ jekyll serve --watch
 ```
-Then access it here: [http://localhost:4000/cartersvillefamilymed/](http://localhost:4000/cartersvillefamilymed/)
+Then access it here: [http://localhost:4000/](http://localhost:4000/cartersvillefamilymed/)
