@@ -2,5 +2,4 @@ baseurl:  ''
 env:      production
 name:     Cartersville Family Medicine
 markdown: redcarpet
-pygments: false
 source:   ./public
