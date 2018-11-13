@@ -1,0 +1,71 @@
+body > .container {
+  padding: 0;
+}
+
+#header {
+  background: #83b8ec;
+  height: 145px;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: initial;
+
+    @media (min-width: @grid-float-breakpoint) {
+      display: initial;
+      margin: 0;
+    }
+  }
+
+  div {
+    height: 100%;
+  }
+
+  #appointments {
+    padding: 15px;
+
+    .well {
+      background: @navbar-inverse-bg;
+      border-color: @navbar-inverse-link-active-bg;
+      position: relative;
+
+      p {
+        color: @gray-lighter;
+        font-size: 21px;
+        height: 60px;
+        line-height: 30px;
+        margin: -30px -50% 0;
+        padding: 0 15px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 100%;
+        left: 50%;
+
+        @media (max-width: @screen-md-min) {
+          font-size: 16px;
+          height: 48px;
+          line-height: 24px;
+          margin: -24px -50% 0;
+        }
+      }
+    }
+  }
+}
+
+nav {
+  .navbar-header {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+#footer {
+  margin-top: 20px;
+
+  #debug {
+    font-family: monospace;
+    font-size: 12px;
+  }
+}

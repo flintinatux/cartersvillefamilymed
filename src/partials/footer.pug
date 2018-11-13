@@ -1,0 +1,8 @@
+#footer
+  if process.env.NODE_ENV === 'development'
+    #debug.well
+      | layout: #{page.layout}
+      br
+      | title: #{page.title}
+      br
+      | url: #{page.url}
