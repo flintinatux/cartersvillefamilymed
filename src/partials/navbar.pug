@@ -1,0 +1,20 @@
+mixin link(href, label)
+  li(class=(page.url === href && 'active'))
+    a(href=href)= label
+
+nav.navbar.navbar-inverse
+  .navbar-header.visible-xs(data-target='#menu' data-toggle='collapse')
+    .navbar-brand Menu
+    button.btn.navbar-btn.navbar-toggle
+      .icon-bar
+      .icon-bar
+      .icon-bar
+  #menu.navbar-collapse.collapse
+    ul.nav.navbar-nav
+      +link('/', 'Home')
+      li
+        a(href=data.urls.portal target='_blank') Patient Portal
+      +link('/providers.html', 'Providers')
+      +link('/forms.html', 'Patient Info / Forms')
+      +link('/location_hours.html', 'Location / Hours')
+      +link('/contact.html', 'Contact Us')
