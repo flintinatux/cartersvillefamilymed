@@ -1,0 +1,43 @@
+extends layouts/default.pug
+
+block vars
+  - var page = { layout: 'default', title: 'Contact Us', url: '/contact.html' }
+
+block content
+  #contact
+    p The patient portal is a convenient, secure tool providing 24-hour access. The site allows you to communicate directly with your physician&rsquo;s office and access your medical history. The portal ensures you receive reminders and notifications from your doctor&rsquo;s office. In addition, you can view office visit notes, billing statements, exchange private messages with your doctor&rsquo;s office, request prescription refills and request new appointments.
+    p.quote
+      | We want to hear from you. Below are three options to choose from in communicating with us.
+      br
+      | See each description below to find out which best fits your needs.
+    .row
+      .col-sm-4
+        p
+          a(href=data.urls.portal target='_blank')
+            img(src=data.images.portal)
+        p Click on the patient portal for login to access your health records.
+      .col-sm-4.text-center
+        h1
+          strong OR
+        p.text-center
+          | Contact us
+          br
+          | via mail at:
+        address
+          strong Cartersville Family Medicine
+          br
+          | 17 Collins Drive
+          br
+          | Cartersville, GA 30120
+          br
+          br
+          i.fa.fa-fw.fa-phone
+          |  (770) 386-9390
+          br
+          i.fa.fa-fw.fa-print
+          |  (770) 386-0212
+      .col-sm-4
+        p
+          a(href=data.urls.healow target='_blank')
+            img(src=data.images.healow)
+        p Download the Healow free app on your smart phone for a 24/7 connection with your health records.

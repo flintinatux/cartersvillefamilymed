@@ -1,0 +1,21 @@
+extends layouts/page.pug
+
+block vars
+  - var page = { layout: 'page', title: 'Location and Hours', url: '/location_hours.html' }
+
+block section
+  #location_hours
+    h3 Location
+    iframe(src=data.urls.map)
+
+    h3 Lab Hours
+    .row
+      .col-sm-6
+        table.table.table-condensed
+          tbody
+            for time in data.hours.lab
+              tr
+                td= time.day
+                td= time.hours
+
+    p The lab is closed for lunch between 12:30pm - 1:30pm, Monday - Thursday.
