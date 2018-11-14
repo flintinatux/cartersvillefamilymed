@@ -13,8 +13,7 @@ block content
     .row
       .col-sm-4
         p
-          a(href=data.urls.portal target='_blank')
-            img(src=data.images.portal)
+          include partials/portal.pug
         p Click on the patient portal for login to access your health records.
       .col-sm-4.text-center
         h1
@@ -38,6 +37,5 @@ block content
           |  (770) 386-0212
       .col-sm-4
         p
-          a(href=data.urls.healow target='_blank')
-            img(src=data.images.healow)
+          include partials/healow.pug
         p Download the Healow free app on your smart phone for a 24/7 connection with your health records.

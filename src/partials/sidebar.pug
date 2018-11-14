@@ -1,7 +1,6 @@
 #sidebar
   #portal(class=(page.url === '/' && 'hidden-xs'))
-    a(href=data.urls.portal target='_blank')
-      img(src=data.images.portal)
+    include portal.pug
 
   #contact_info.well
     h3 Contact Information
@@ -28,5 +27,4 @@
             td=time.day
             td=time.hours
   #healow
-    a(href=data.urls.healow target='_blank')
-      img(src=data.images.healow)
+    include healow.pug
