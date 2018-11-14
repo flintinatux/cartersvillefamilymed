@@ -1,1 +1,29 @@
 #sidebar
+  #portal(class=(page.url === '/' && 'hidden-xs'))
+    a(href=data.urls.portal target='_blank')
+      img(src=data.images.portal)
+
+  #contact_info.well
+    h3 Contact Information
+    address
+      strong Cartersville Family Medicine
+      br
+      | 17 Collins Drive
+      br
+      | Cartersville, GA 30120
+      br
+      br
+      i.fa.fa-fw.fa-phone(title='Phone')
+      | (770) 386-9390
+      br
+      i.fa.fa-fw.fa-print(title='Fax')
+      | (770) 386-0212
+
+  #office_hours.well
+    h3 Office Hours
+    table.table.table-condensed
+      tbody
+        for time in data.hours.office
+          tr
+            td=time.day
+            td=time.hours

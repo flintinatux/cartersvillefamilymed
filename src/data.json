@@ -1,5 +1,44 @@
 {
   "data": {
+    "images": {
+      "building": "/images/cartersville-family-med-front.jpg",
+      "logo": "/images/logo.jpg",
+      "portal": "/images/portal.png"
+    },
+    "hours": {
+      "lab": [{
+        "day": "Monday",
+        "hours": "7:30am - 3:30pm"
+      }, {
+        "day": "Tuesday",
+        "hours": "7:30am - 3:30pm"
+      }, {
+        "day": "Wednesday",
+        "hours": "7:30am - 3:30pm"
+      }, {
+        "day": "Thursday",
+        "hours": "7:30am - 3:30pm"
+      }, {
+        "day": "Friday",
+        "hours": "7:30am - 11:00am"
+      }],
+      "office": [{
+        "day": "Monday",
+        "hours": "8:00am - 4:00pm"
+      }, {
+        "day": "Tuesday",
+        "hours": "8:00am - 4:00pm"
+      }, {
+        "day": "Wednesday",
+        "hours": "8:00am - 4:00pm"
+      }, {
+        "day": "Thursday",
+        "hours": "8:00am - 4:00pm"
+      }, {
+        "day": "Friday",
+        "hours": "8:00am - 12:00pm"
+      }]
+    },
     "urls": {
       "healow": "https://www.healow.com/app.html",
       "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3300.1935824015136!2d-84.792429!3d34.19253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f54f9671016273%3A0x1d3bedb456f75ad6!2s17+Collins+Dr!5e0!3m2!1sen!2sus!4v1393535956456",

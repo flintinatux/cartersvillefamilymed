@@ -9,17 +9,20 @@
   "private": true,
   "scripts": {
     "build": "run-p build:*",
-    "build:pages": "NODE_ENV=development pug -O src/data.json -o docs -P src/*.pug",
+    "build:pages": "pug -O src/data.json -o docs -P src/*.pug",
     "build:styles": "lessc src/index.less | postcss -u autoprefixer | cleancss -O2 --inline all > docs/index.css",
     "clean": "rm -f docs/*.{css,html}",
     "prebuild": "yarn run clean",
     "prewatch": "yarn run clean",
+    "prewatch:styles": "yarn run build:styles",
     "watch": "run-p watch:*",
-    "watch:pages": "pug -O src/data.json -o docs -Pw src/*.pug",
+    "watch:pages": "NODE_ENV=development pug -O src/data.json -o docs -Pw src/*.pug",
     "watch:serve": "http-server docs -c-1 -p 3000 -s",
-    "watch:styles": "chokidar 'client/styles/*.less' -c 'yarn run build:styles' --silent"
+    "watch:styles": "chokidar 'src/styles/*.less' -c 'yarn run build:styles' --silent"
   },
   "dependencies": {
+    "bootstrap": "~3",
+    "font-awesome": "~4",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
