@@ -1,7 +1,16 @@
 {
   "data": {
+    "downloads": {
+      "bloodPressure": "/downloads/blood_pressure_log.pdf",
+      "bloodSugar": "/downloads/blood_sugar_diary.pdf",
+      "headache": "/downloads/headache_diary.pdf",
+      "hipaa": "/downloads/hipaa_notice_of_privacy_practices.pdf",
+      "recordsRelease": "/downloads/records_release_to_cfm.pdf"
+    },
     "images": {
       "building": "/images/cartersville-family-med-front.jpg",
+      "drShibley": "/images/dr_shibley.jpg",
+      "drSmith": "/images/dr_smith.jpg",
       "healow": "/images/healow.png",
       "logo": "/images/logo.jpg",
       "portal": "/images/portal.png"

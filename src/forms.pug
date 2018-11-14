@@ -1,0 +1,44 @@
+extends layouts/page.pug
+
+block vars
+  - var page = { layout: 'page', title: 'Patient Info and Forms', url: '/forms.html' }
+
+block section
+  #forms
+    h3 Your First Appointment
+    p Please arrive early so that we can complete your initial paperwork. Also, please bring the following:
+
+    ul
+      li Patient&rsquo;s drivers license or other identification
+      li Patient&apos;s insurance card
+      li List of current prescriptions and/or over-the-counter medication, including dose and frequency
+      li Information about patient&apos;s medical and surgical history
+      li Recent test results, x-rays, or relevant records
+
+    h3 Patient Forms
+    p Click on each link to download or print a copy.
+
+    ul
+      li New Patient Packet
+      li
+        a(href=data.downloads.recordsRelase target='_blank') Medical Records Release
+      li
+        a(href=data.downloads.bloodPressure target='_blank') Blood Pressure Log
+      li
+        a(href=data.downloads.bloodSugar target='_blank') Blood Sugar Diary
+      li
+        a(href=data.downloads.headache target='_blank') Headache Diary
+
+    h3 Fees and Payment Information
+    p Our fees are comparable to those charged for similar services in our community. Payment at the time of service is required to help contain our costs and keep our fees reasonable.  Co-payments and deductibles are due at the time of service.  For your convenience, we do accept both Visa and MasterCard.
+    p Please provide accurate insurance records including your carrier and policy number.  You may wish to speak with our billing department to verify that we participate with your particular insurance plan.  We are contracted with most insurance plans.  Please be aware that if your insurance has not paid your charges within sixty days, these charges will become your responsibility.  Please let us know of any changes in your insurance as soon as they occur.
+
+    h3 Privacy Practices
+    p Our notice of privacy practices describes how medical information about you may be used and disclosed and how you can get access to this information. It is given to all new patients, and is available below to download or print a copy.
+
+    ul
+      li
+        a(href=data.downloads.hipaa target='_blank') HIPAA Notice of Privacy Practices
+
+    h3 Emergencies
+    p If a medical condition arises when our office is closed and you do not feel it will wait until the office re-opens, please call 911.  A provider can be reached by calling our answering service at 770-928-5206.  Please note that a nominal fee will be charged for this service.
