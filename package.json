@@ -16,7 +16,7 @@
     "prewatch": "yarn run clean",
     "prewatch:styles": "yarn run build:styles",
     "watch": "run-p watch:*",
-    "watch:pages": "NODE_ENV=development pug -O src/data.json -o docs -Pw src/*.pug",
+    "watch:pages": "pug -O src/data.json -o docs -Pw src/*.pug",
     "watch:serve": "http-server docs -c-1 -p 3000 -s",
     "watch:styles": "chokidar 'src/styles/*.less' -c 'yarn run build:styles' --silent"
   },
